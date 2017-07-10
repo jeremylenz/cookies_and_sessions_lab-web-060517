@@ -1,0 +1,7 @@
+<h1>Products#index</h1>
+
+<% session[:cart].each do |item| %>
+<p><%= item %></p>
+<% end %>
+<br>
+<%= link_to "Add new product", add_product_path %>
